@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   description: 'AI驱动的碳排放舞弊审计研究 — 南京审计大学国家级大学生创新训练计划项目',
   school: '南京审计大学',
   url: 'https://greenaudit-ai.vercel.app',
-  github: 'https://github.com/nau-esg/greenaudit-ai',
+  github: 'https://github.com/shu639',
 } as const
 
 export const TEAM_MEMBERS: TeamMember[] = [

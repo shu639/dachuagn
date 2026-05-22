@@ -15,8 +15,12 @@ export default function TeamPage() {
             <div key={member.id} className="p-6 rounded-2xl bg-[#111118] border border-[#222233] hover:border-[#00ff88]/20 transition-all duration-300">
               <div className="flex items-center gap-4 mb-5">
                 <div className="relative flex-shrink-0">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00ff88]/20 to-[#00d4ff]/10 flex items-center justify-center border border-[#00ff88]/20">
-                    <User className="w-7 h-7 text-[#00ff88]/40" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00ff88]/20 to-[#00d4ff]/10 flex items-center justify-center border border-[#00ff88]/20 overflow-hidden">
+                    {member.avatarUrl ? (
+                      <img src={member.avatarUrl} alt={member.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <User className="w-7 h-7 text-[#00ff88]/40" />
+                    )}
                   </div>
                   {member.role === 'advisor' && (
                     <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-[#f59e0b] flex items-center justify-center">

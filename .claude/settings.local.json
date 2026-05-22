@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"d:\\\\zhuomian\\\\chuang\" -Force)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)"
+    ]
+  }
+}
